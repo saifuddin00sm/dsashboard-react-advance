@@ -1,13 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.2px;
+  overflow-x: hidden;
+
+  color: #104975;
+}
+  /* VARIABLES */
+  
+  :root {
+    --main-color: #1a8fff;
+    --text-color: #777;
+    --text-color-light: #ccc;
+    --border-color: #eee;
+    --bg-color: #f9f9f9;
+    --neutral-color: #fff;
+  }
+
+.ant-menu-inline.ant-menu-root .ant-menu-item, .ant-menu-inline.ant-menu-root .ant-menu-submenu-title {
+  height: 56px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-menu-item .ant-menu-item-icon, .ant-menu-submenu-title .ant-menu-item-icon, .ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+  min-width: 18px;
+  font-size: 18px;
+}
+
+.ant-menu-inline.ant-menu-root .ant-menu-item>.ant-menu-title-content, .ant-menu-inline.ant-menu-root .ant-menu-submenu-title>.ant-menu-title-content {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #104975;
+}
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after{
+  left: 0;
+  border-right: 3px solid #104975;
+}
+
+.ant-menu-item-selected {
+  color: #104975;
+}
+
+.ant-layout-header h3 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  color: #252733;
+  margin: 0;
+}
+
+.ant-layout-header {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.ant-divider-horizontal{
+  margin: 15px 0 !important;
 }
